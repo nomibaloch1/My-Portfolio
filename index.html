@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Noman's IT portfolio, skills, projects and interests.">
+  <title>Noman | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="logo" data-view="home" aria-label="Noman home">N<span>.</span></a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#home" data-view="home" class="nav-link active">Home</a>
+            <a href="#about" data-view="home" data-scroll="about" class="nav-link">About</a>
+            <a href="#skills" data-view="home" data-scroll="skills" class="nav-link">Skills</a>
+            <a href="#projects" data-view="projects" class="nav-link">Projects</a>
+            <a href="#adventures" data-view="adventures" class="nav-link">Adventures</a>
+            <a href="#movies" data-view="movies" class="nav-link">Movies &amp; Series</a>
+            <a href="#interests" data-view="interests" class="nav-link">Interests</a>
+            <a href="#quotes" data-view="quotes" class="nav-link">Quotes</a>
+            <a href="#contact" data-view="contact" class="nav-link">Contact</a>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Toggle theme">☀️</button>
+        </div>
+      </nav>
+    </header>
+<main id="page-content">
+  <div id="view-home" class="page-view active" data-page="home">
+    <!-- HERO -->
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Noman.</span></h1>
+
+                <h2 class="role-line">
+                    I'm an <span id="typing-text">IT Student</span><span
+                    class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    I'm a BS Information Technology student interested in
+                    programming, web development, problem-solving and
+                    creative digital work. I'm always learning and building.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links" aria-label="Social media">
+                    <a href="https://github.com/nomibaloch1" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="https://facebook.com/Nomi Baloch" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://wa.me/03333147370" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <img src="images/profile.jpg"
+                     alt="Portrait of Noman"
+                     class="profile-photo">
+
+                <p class="profile-label">STUDENT · DEVELOPER</p>
+                <h3>Curious Mind.</h3>
+                <h3>Creative Thinking.</h3>
+                <p>Always learning and improving.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-card">
+                <p>
+                    My name is Noman, and I'm a BS Information Technology
+                    student at Balochistan University.
+                </p>
+                <p>
+                    I'm developing my skills in programming, web technologies,
+                    editing and problem-solving. My goal is to build useful
+                    projects and grow as a developer.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <p class="eyebrow">WHAT I'M LEARNING</p>
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>Beginner</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress" data-level="55"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>Beginner</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress" data-level="45"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C++</span>
+                        <span>Beginner</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress" data-level="40"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Editing & Office Tools</span>
+                        <span>Learning</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress" data-level="60"></div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </section>
+    <!-- EDUCATION -->
+        <section class="section container" id="education">
+            <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-card">
+                <p class="education-year">2024 — 2028</p>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>Balochistan University</p>
+                <p class="muted">Undergraduate student</p>
+            </div>
+        </section>
+  </div>
+  <div id="view-projects" class="page-view" data-page="projects" hidden>
+    <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <p class="eyebrow">MY LEARNING JOURNEY</p>
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-number">PROJECT 01</p>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website presenting my background,
+                        skills and work using HTML and CSS.
+                    </p>
+                    <span class="tag">HTML + CSS</span>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-number">PROJECT 02</p>
+                    <h3>Student Management</h3>
+                    <p>
+                        A student-record management project concept
+                        for adding, searching and displaying records.
+                    </p>
+                    <span class="tag">C++</span>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-number">PROJECT 03</p>
+                    <h3>Web Technologies</h3>
+                    <p>
+                        Practical work exploring website structure,
+                        styling and modern web concepts.
+                    </p>
+                    <span class="tag">Web Development</span>
+                </article>
+            </div>
+        </section>
+    <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+  </div>
+  <div id="view-adventures" class="page-view" data-page="adventures" hidden>
+    <!-- ADVENTURES & TRAVEL -->
+<section id="adventures" class="personal-section">
+  <div class="section-heading">
+    <span class="section-tag">BEYOND THE SCREEN</span>
+    <h2>Adventures & <span>Travel</span></h2>
+    <p>Places I've explored and places I dream of visiting.</p>
+  </div>
+
+  <div class="personal-grid">
+    <article class="feature-card adventure-card">
+      <div class="card-icon">📍</div>
+      <span class="card-label">MY EXPERIENCES</span>
+      <h3>Trips & Places</h3>
+      <p>
+        Every journey has a story. This is where I'll share
+        memorable places, local adventures and experiences.
+      </p>
+      <p class="card-note">More adventures coming soon.</p>
+    </article>
+
+    <article class="feature-card travel-card">
+      <div class="card-icon">✈️</div>
+      <span class="card-label">MY BUCKET LIST</span>
+      <h3>Places I Want to Visit</h3>
+      <ul class="wishlist">
+        <li><span>01</span> Northern Pakistan</li>
+        <li><span>02</span> Turkey</li>
+        <li><span>03</span> Switzerland</li>
+        <li><span>04</span> The Netherlands</li>
+      </ul>
+    </article>
+  </div>
+</section>
+    <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+  </div>
+  <!-- MOVIES & SERIES VIEW -->
+<section id="movies" class="page-view personal-section" data-page="movies" hidden>
+  <div class="section-heading">
+    <span class="section-tag">MY WATCHLIST</span>
+    <h2>Movies &amp; <span>Series</span></h2>
+    <p>Stories, characters and cinematic worlds I enjoy.</p>
+  </div>
+  <div class="filter-bar" aria-label="Filter movies and series">
+    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All titles</button>
+    <button class="filter-btn" type="button" data-filter="movie" aria-pressed="false">Movies</button>
+    <button class="filter-btn" type="button" data-filter="series" aria-pressed="false">Series</button>
+  </div>
+  <p class="watchlist-count">15 movies · 5 series</p>
+  <div class="movie-grid">
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-music" role="img" aria-label="Poster-style artwork for Rockstar">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Rockstar</span>
+          <span class="poster-bottom">2011 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Romance · Music</span></div>
+        <h3>Rockstar</h3>
+        <p class="movie-year">2011</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-atonement" role="img" aria-label="Poster-style artwork for Atonement">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Atonement</span>
+          <span class="poster-bottom">2007 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Romantic Drama</span></div>
+        <h3>Atonement</h3>
+        <p class="movie-year">2007</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-kgf" role="img" aria-label="Poster-style artwork for KGF: Chapter 1">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">KGF: Chapter 1</span>
+          <span class="poster-bottom">2018 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Action · Crime</span></div>
+        <h3>KGF: Chapter 1</h3>
+        <p class="movie-year">2018</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-fightclub" role="img" aria-label="Poster-style artwork for Fight Club">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Fight Club</span>
+          <span class="poster-bottom">1999 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Psychological Drama</span></div>
+        <h3>Fight Club</h3>
+        <p class="movie-year">1999</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-taxi" role="img" aria-label="Poster-style artwork for Taxi Driver">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Taxi Driver</span>
+          <span class="poster-bottom">1976 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Crime · Drama</span></div>
+        <h3>Taxi Driver</h3>
+        <p class="movie-year">1976</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-inception" role="img" aria-label="Poster-style artwork for Inception">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Inception</span>
+          <span class="poster-bottom">2010 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Sci-Fi · Thriller</span></div>
+        <h3>Inception</h3>
+        <p class="movie-year">2010</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-interstellar" role="img" aria-label="Poster-style artwork for Interstellar">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Interstellar</span>
+          <span class="poster-bottom">2014 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Sci-Fi · Adventure</span></div>
+        <h3>Interstellar</h3>
+        <p class="movie-year">2014</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-scarface" role="img" aria-label="Poster-style artwork for Scarface">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Scarface</span>
+          <span class="poster-bottom">1983 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Crime · Drama</span></div>
+        <h3>Scarface</h3>
+        <p class="movie-year">1983</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-godfather" role="img" aria-label="Poster-style artwork for The Godfather">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">The Godfather</span>
+          <span class="poster-bottom">1972 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Crime · Classic</span></div>
+        <h3>The Godfather</h3>
+        <p class="movie-year">1972</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-seven" role="img" aria-label="Poster-style artwork for Se7en">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Se7en</span>
+          <span class="poster-bottom">1995 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Crime · Mystery</span></div>
+        <h3>Se7en</h3>
+        <p class="movie-year">1995</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-shawshank" role="img" aria-label="Poster-style artwork for The Shawshank Redemption">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">The Shawshank Redemption</span>
+          <span class="poster-bottom">1994 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Drama</span></div>
+        <h3>The Shawshank Redemption</h3>
+        <p class="movie-year">1994</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-chup" role="img" aria-label="Poster-style artwork for Chup Chup Ke">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Chup Chup Ke</span>
+          <span class="poster-bottom">2006 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Comedy · Romance</span></div>
+        <h3>Chup Chup Ke</h3>
+        <p class="movie-year">2006</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-hera" role="img" aria-label="Poster-style artwork for Hera Pheri">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Hera Pheri</span>
+          <span class="poster-bottom">2000 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Comedy</span></div>
+        <h3>Hera Pheri</h3>
+        <p class="movie-year">2000</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-expendables" role="img" aria-label="Poster-style artwork for The Expendables">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">The Expendables</span>
+          <span class="poster-bottom">2010 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Action</span></div>
+        <h3>The Expendables</h3>
+        <p class="movie-year">2010</p>
+      </article>
+      <article class="movie-card" data-category="movie">
+        <div class="movie-poster poster-johnwick" role="img" aria-label="Poster-style artwork for John Wick">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">John Wick</span>
+          <span class="poster-bottom">2014 <i>•</i> MOVIE</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">MOVIE</span><span class="movie-genre">Action · Thriller</span></div>
+        <h3>John Wick</h3>
+        <p class="movie-year">2014</p>
+      </article>
+      <article class="movie-card" data-category="series">
+        <div class="movie-poster poster-breakingbad" role="img" aria-label="Poster-style artwork for Breaking Bad">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Breaking Bad</span>
+          <span class="poster-bottom">2008 <i>•</i> SERIES</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">SERIES</span><span class="movie-genre">Crime · Drama</span></div>
+        <h3>Breaking Bad</h3>
+        <p class="movie-year">2008</p>
+      </article>
+      <article class="movie-card" data-category="series">
+        <div class="movie-poster poster-got" role="img" aria-label="Poster-style artwork for Game of Thrones">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Game of Thrones</span>
+          <span class="poster-bottom">2011 <i>•</i> SERIES</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">SERIES</span><span class="movie-genre">Fantasy · Drama</span></div>
+        <h3>Game of Thrones</h3>
+        <p class="movie-year">2011</p>
+      </article>
+      <article class="movie-card" data-category="series">
+        <div class="movie-poster poster-panchayat" role="img" aria-label="Poster-style artwork for Panchayat">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Panchayat</span>
+          <span class="poster-bottom">2020 <i>•</i> SERIES</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">SERIES</span><span class="movie-genre">Comedy · Drama</span></div>
+        <h3>Panchayat</h3>
+        <p class="movie-year">2020</p>
+      </article>
+      <article class="movie-card" data-category="series">
+        <div class="movie-poster poster-sacredgames" role="img" aria-label="Poster-style artwork for Sacred Games">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Sacred Games</span>
+          <span class="poster-bottom">2018 <i>•</i> SERIES</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">SERIES</span><span class="movie-genre">Crime · Thriller</span></div>
+        <h3>Sacred Games</h3>
+        <p class="movie-year">2018</p>
+      </article>
+      <article class="movie-card" data-category="series">
+        <div class="movie-poster poster-paatallok" role="img" aria-label="Poster-style artwork for Paatal Lok">
+          <span class="poster-kicker">NOMAN'S WATCHLIST</span>
+          <span class="poster-title">Paatal Lok</span>
+          <span class="poster-bottom">2020 <i>•</i> SERIES</span>
+        </div>
+        <div class="movie-meta"><span class="movie-type">SERIES</span><span class="movie-genre">Crime · Thriller</span></div>
+        <h3>Paatal Lok</h3>
+        <p class="movie-year">2020</p>
+      </article>
+  </div>
+  <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+</section>
+  <div id="view-interests" class="page-view" data-page="interests" hidden>
+    <!-- PERSONAL INTERESTS -->
+<section id="interests" class="personal-section">
+  <div class="section-heading">
+    <span class="section-tag">OUTSIDE MY STUDIES</span>
+    <h2>Personal <span>Interests</span></h2>
+    <p>The things I enjoy beyond university and coding.</p>
+  </div>
+
+  <div class="personal-grid interest-grid">
+    <article class="feature-card">
+      <div class="card-icon">🎮</div>
+      <h3>Gaming</h3>
+      <p>Gaming, improving my skills and enjoying competitive challenges.</p>
+      <div class="interest-tags">
+        <span>PC Gaming</span>
+        <span>Mobile Gaming</span>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-icon">🎧</div>
+      <h3>Music Favourites</h3>
+      <p>Music that matches my mood, helps me focus and makes the day better.</p>
+      <div class="interest-tags">
+        <span>Favourite Songs</span>
+        <span>Playlists</span>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-icon">📷</div>
+      <h3>Photography</h3>
+      <p>Capturing places, everyday moments and interesting details.</p>
+      <div class="interest-tags">
+        <span>Nature</span>
+        <span>Everyday Moments</span>
+      </div>
+    </article>
+  </div>
+</section>
+    <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+  </div>
+  <div id="view-quotes" class="page-view" data-page="quotes" hidden>
+    <!-- QUOTES & IDEAS -->
+<section id="quotes" class="personal-section">
+  <div class="section-heading">
+    <span class="section-tag">THOUGHTS & PERSPECTIVE</span>
+    <h2>Quotes & <span>Ideas</span></h2>
+    <p>Thoughts that inspire me to learn and keep moving.</p>
+  </div>
+
+  <div class="quote-card">
+    <span class="quote-mark">“</span>
+    <blockquote>
+      Small steps every day can lead to remarkable progress.
+    </blockquote>
+    <p>MY PERSONAL REMINDER</p>
+  </div>
+
+  <div class="personal-grid idea-grid">
+    <article class="feature-card">
+      <div class="card-icon">💡</div>
+      <h3>Keep Learning</h3>
+      <p>Stay curious, ask questions and keep improving your skills.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-icon">🎯</div>
+      <h3>Focus on Progress</h3>
+      <p>Build good habits and let consistent effort do its work.</p>
+    </article>
+  </div>
+</section>
+    <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+  </div>
+  <div id="view-contact" class="page-view" data-page="contact" hidden>
+    <!-- CONTACT -->
+        <section class="section container" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact-card">
+                <p class="contact-intro">
+                    Have a project idea or a question? Send me a message.
+                </p>
+
+                <form id="contact-form"
+                      action="https://formspree.io/f/YOUR_FORM_ID"
+                      method="POST">
+
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text"
+                           placeholder="Enter your name"
+                           autocomplete="name" required minlength="2">
+
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" type="email"
+                           placeholder="you@example.com"
+                           autocomplete="email" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message"
+                              rows="5" placeholder="Write your message..."
+                              required minlength="10"></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                    <p id="form-status" class="form-status"
+                       role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    <div class="view-footer"><a href="#home" data-view="home" class="btn btn-outline">← Back to Profile</a></div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span> Noman. Built with HTML, CSS &amp; JS.</p>
+    <a href="#home" data-view="home">Back to Profile ↑</a>
+  </div>
+</footer>
+</body>
+</html>

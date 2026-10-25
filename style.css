@@ -604,6 +604,25 @@ a {
   font-size: 1.25rem;
 }
 
+/* Fix: Show complete quotes inside cards */
+.feature-card {
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.feature-card p {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: initial;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .card-icon {
   margin-bottom: 18px;
   font-size: 2rem;

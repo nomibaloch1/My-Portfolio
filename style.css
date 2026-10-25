@@ -930,3 +930,13 @@ a {
     border-radius: 12px;
     margin: 0 0 14px;
 }
+
+.feature-card p {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

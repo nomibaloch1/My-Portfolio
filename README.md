@@ -5,7 +5,7 @@
 
 ### `IT STUDENT • DEVELOPER • GAMER • CREATIVE LEARNER`
 
-<img src="profile.jpg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=900&color=00F5FF&center=true&vCenter=true&width=600&lines=Building+my+skills+one+day+at+a+time;Learning+to+code+and+create;Turning+ideas+into+projects;Always+learning.+Always+improving." alt="Typing animatio" />
+<img src="./profile.jpg" width="180" alt="Noman Baloch">
 
 <br/>
 

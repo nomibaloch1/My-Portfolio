@@ -6,7 +6,7 @@ I'm Noman Baloch, a BS Information Technology student at Balochistan University.
 
 ## 🌐 Live Website
 
-🔗 **Visit my portfolio:** [NOMI BALOCH Portfolio](https://nomibaloch1.github.io/NOMI-BALOCH/)
+🔗 **Visit my portfolio:** [NOMI BALOCH Portfolio](https://nomibaloch1.github.io/My-Portfolio/)
 
 ## 👨‍💻 About Me
 
@@ -43,7 +43,7 @@ My goal is to improve my technical skills, build useful projects, and grow as an
 ## 📬 Connect With Me
 
 - **GitHub:** [@nomibaloch1](https://github.com/nomibaloch1)
-- **Portfolio:** [Visit Website](https://nomibaloch1.github.io/NOMI-BALOCH/)
+- **Portfolio:** [Visit Website](https://nomibaloch1.github.io/My-Portfolio/)
 
 ---
 

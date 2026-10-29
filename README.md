@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# ⚡ NOMAN BALOCH
+#  NOMAN BALOCH
 
 ### `IT STUDENT • DEVELOPER • GAMER • CREATIVE LEARNER`
 

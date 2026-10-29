@@ -68,6 +68,4 @@ My personal website showcasing my profile, projects, interests, travel adventure
 
 *Thanks for visiting my GitHub profile.*
 
-![Profile Views](https://komarev.com/ghpvc/?username=nomibaloch1&color=00F5FF&style=flat-square&label=PROFILE+VIEWS)
-
 </div>

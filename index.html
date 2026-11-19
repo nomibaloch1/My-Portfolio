@@ -3,639 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Noman's IT portfolio, skills, projects and interests.">
-  <title>Noman | Personal Portfolio</title>
+  <meta name="description" content="Noman Baloch — personal portfolio, projects, skills and interests.">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>Noman Baloch | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- ===== HEADER / NAVIGATION ===== -->
-  <header class="header">
-    <nav class="navbar container">
-      <a href="#home" class="logo">N<span>.</span></a>
-
-      <div class="nav-right">
-        <div class="nav-links">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#adventures" class="nav-link">Adventures</a>
-          <a href="#movies" class="nav-link">Movies &amp; Series</a>
-          <a href="#interests" class="nav-link">Interests</a>
-          <a href="#quotes" class="nav-link">Quotes</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">☀️</button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ===== PAGE 1: HOME (me, about, skills, education) ===== -->
-    <div id="view-home" class="page-view">
-
-      <!-- ME -->
-      <section class="me container" id="home">
-        <div class="me-content">
-          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-          <h1>Hi, I'm <span>Noman.</span></h1>
-
-          <h2 class="role-line">
-            I'm an <span id="typing-text">IT Student</span><span class="typing-cursor">|</span>
-          </h2>
-
-          <p class="me-description">
-            I'm a BS Information Technology student interested in
-            programming, web development, problem-solving and
-            creative digital work. I'm always learning and building.
-          </p>
-
-          <div class="me-buttons">
-            <a href="#projects" class="btn btn-primary">Explore My Work</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-          </div>
-
-          <div class="social-links">
-            <a href="https://github.com/nomibaloch1" target="_blank">GitHub</a>
-            <a href="https://facebook.com/Nomi%20Baloch" target="_blank">Facebook</a>
-            <a href="https://wa.me/923333147370" target="_blank">WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="me-card">
-          <img src="profile.jpg" alt="Portrait of Noman" class="profile-photo">
-          <p class="profile-label">STUDENT · DEVELOPER</p>
-          <h3>Curious Mind.</h3>
-          <h3>Creative Thinking.</h3>
-          <p>Always learning and improving.</p>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="section container" id="about">
-        <p class="eyebrow">GET TO KNOW ME</p>
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-card">
-          <p>
-            My name is Noman, and I'm a BS Information Technology
-            student at Balochistan University.
-          </p>
-          <p>
-            I'm developing my skills in programming, web technologies,
-            editing and problem-solving. My goal is to build useful
-            projects and grow as a developer.
-          </p>
-        </div>
-      </section>
-
-      <!-- SKILLS (data-level = how full the bar becomes, in %) -->
-      <section class="section container" id="skills">
-        <p class="eyebrow">WHAT I'M LEARNING</p>
-        <h2 class="section-title">My Skills</h2>
-
-        <div class="skills-list">
-          <div class="skill-item">
-            <div class="skill-info"><span>HTML</span><span>Beginner</span></div>
-            <div class="skill-track"><div class="skill-progress" data-level="55"></div></div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>CSS</span><span>Beginner</span></div>
-            <div class="skill-track"><div class="skill-progress" data-level="45"></div></div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>C++</span><span>Beginner</span></div>
-            <div class="skill-track"><div class="skill-progress" data-level="40"></div></div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>Editing &amp; Office Tools</span><span>Learning</span></div>
-            <div class="skill-track"><div class="skill-progress" data-level="60"></div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="section container" id="education">
-        <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-          <p class="education-year">2024 — 2028</p>
-          <h3>Bachelor of Science in Information Technology</h3>
-          <p>Balochistan University</p>
-          <p class="muted">Undergraduate student</p>
-        </div>
-      </section>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="#home" data-page="home" aria-label="Noman Baloch home">NB<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-panel"><span></span><span></span></button>
+    <div class="nav-panel" id="nav-panel">
+      <div class="nav-links"><button class="nav-link active" type="button" data-page="home" aria-current="page">Home</button>
+<button class="nav-link" type="button" data-page="about" aria-current="false">About</button>
+<button class="nav-link" type="button" data-page="skills" aria-current="false">Skills</button>
+<button class="nav-link" type="button" data-page="education" aria-current="false">Education</button>
+<button class="nav-link" type="button" data-page="projects" aria-current="false">Projects</button>
+<button class="nav-link" type="button" data-page="adventures" aria-current="false">Adventures</button>
+<button class="nav-link" type="button" data-page="movies" aria-current="false">Movies & Series</button>
+<button class="nav-link" type="button" data-page="interests" aria-current="false">Interests</button>
+<button class="nav-link" type="button" data-page="contact" aria-current="false">Contact</button></div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme"><span class="theme-icon">☾</span></button>
     </div>
-
-    <!-- ===== PAGE 2: PROJECTS ===== -->
-    <div id="view-projects" class="page-view" hidden>
-      <section class="section container" id="projects">
-        <p class="eyebrow">MY LEARNING JOURNEY</p>
-        <h2 class="section-title">Featured Projects</h2>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <p class="project-number">PROJECT 01</p>
-            <h3>Personal Portfolio</h3>
-            <p>A personal website presenting my background, skills and work using HTML and CSS.</p>
-            <span class="tag">HTML + CSS</span>
-          </article>
-
-          <article class="project-card">
-            <p class="project-number">PROJECT 02</p>
-            <h3>Student Management</h3>
-            <p>A student-record management project concept for adding, searching and displaying records.</p>
-            <span class="tag">C++</span>
-          </article>
-
-          <article class="project-card">
-            <p class="project-number">PROJECT 03</p>
-            <h3>Web Technologies</h3>
-            <p>Practical work exploring website structure, styling and modern web concepts.</p>
-            <span class="tag">Web Development</span>
-          </article>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-    <!-- ===== PAGE 3: ADVENTURES ===== -->
-    <div id="view-adventures" class="page-view" hidden>
-      <section id="adventures" class="personal-section">
-        <div class="section-heading">
-          <span class="section-tag">BEYOND THE SCREEN</span>
-          <h2>Adventures &amp; <span>Travel</span></h2>
-          <p>Places I've explored and places I dream of visiting.</p>
-        </div>
-
-        <div class="personal-grid">
-          <article class="feature-card">
-            <img src="images/quetta.jpg" alt="Quetta" class="adventure-photo">
-            <span class="card-label">MY CITY</span>
-            <h3>Quetta</h3>
-            <p>Discovering local places, city views and the beauty of Balochistan.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/nushki.jpg" alt="Nushki" class="adventure-photo">
-            <span class="card-label">LOCAL ADVENTURE</span>
-            <h3>Nushki</h3>
-            <p>Exploring local landscapes, culture and places worth remembering.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/ziarat.JPG" alt="Ziarat mountains" class="adventure-photo">
-            <span class="card-label">NATURE &amp; MOUNTAINS</span>
-            <h3>Ziarat</h3>
-            <p>Mountain views, beautiful scenery and the peaceful side of Balochistan.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/bolan.jpg" alt="Bolan landscape" class="adventure-photo">
-            <span class="card-label">NATURE &amp; ADVENTURE</span>
-            <h3>Bolan</h3>
-            <p>Exploring the scenic landscapes, mountain passes and natural beauty of Balochistan.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="card-icon">✈️</div>
-            <span class="card-label">MY BUCKET LIST</span>
-            <h3>Future Trips</h3>
-            <ul class="wishlist">
-              <li><span>01</span> Northern Pakistan</li>
-              <li><span>02</span> Nepal</li>
-              <li><span>03</span> Italy</li>
-              <li><span>04</span> Spain</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-    <!-- ===== PAGE 4: MOVIES & SERIES ===== -->
-    <div id="view-movies" class="page-view" hidden>
-      <section id="movies" class="personal-section">
-        <div class="section-heading">
-          <span class="section-tag">MY WATCHLIST</span>
-          <h2>Movies &amp; <span>Series</span></h2>
-          <p>Stories, characters and cinematic worlds I enjoy.</p>
-        </div>
-
-        <!-- data-filter decides which cards stay visible -->
-        <div class="filter-bar">
-          <button class="filter-btn active" type="button" data-filter="all">All titles</button>
-          <button class="filter-btn" type="button" data-filter="movie">Movies</button>
-          <button class="filter-btn" type="button" data-filter="series">Series</button>
-        </div>
-
-        <p class="watchlist-count">15 movies · 5 series</p>
-
-        <div class="movie-grid">
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-music">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Rockstar</span>
-              <span class="poster-bottom">2011 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Romance · Music</span>
-            </div>
-            <h3>Rockstar</h3>
-            <p class="movie-year">2011</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-atonement">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Atonement</span>
-              <span class="poster-bottom">2007 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Romantic Drama</span>
-            </div>
-            <h3>Atonement</h3>
-            <p class="movie-year">2007</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-kgf">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">KGF: Chapter 1</span>
-              <span class="poster-bottom">2018 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Action · Crime</span>
-            </div>
-            <h3>KGF: Chapter 1</h3>
-            <p class="movie-year">2018</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-fightclub">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Fight Club</span>
-              <span class="poster-bottom">1999 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Psychological Drama</span>
-            </div>
-            <h3>Fight Club</h3>
-            <p class="movie-year">1999</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-taxi">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Taxi Driver</span>
-              <span class="poster-bottom">1976 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Crime · Drama</span>
-            </div>
-            <h3>Taxi Driver</h3>
-            <p class="movie-year">1976</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-inception">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Inception</span>
-              <span class="poster-bottom">2010 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Sci-Fi · Thriller</span>
-            </div>
-            <h3>Inception</h3>
-            <p class="movie-year">2010</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-interstellar">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Interstellar</span>
-              <span class="poster-bottom">2014 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Sci-Fi · Adventure</span>
-            </div>
-            <h3>Interstellar</h3>
-            <p class="movie-year">2014</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-scarface">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Scarface</span>
-              <span class="poster-bottom">1983 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Crime · Drama</span>
-            </div>
-            <h3>Scarface</h3>
-            <p class="movie-year">1983</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-godfather">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">The Godfather</span>
-              <span class="poster-bottom">1972 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Crime · Classic</span>
-            </div>
-            <h3>The Godfather</h3>
-            <p class="movie-year">1972</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-seven">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Se7en</span>
-              <span class="poster-bottom">1995 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Crime · Mystery</span>
-            </div>
-            <h3>Se7en</h3>
-            <p class="movie-year">1995</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-shawshank">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">The Shawshank Redemption</span>
-              <span class="poster-bottom">1994 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Drama</span>
-            </div>
-            <h3>The Shawshank Redemption</h3>
-            <p class="movie-year">1994</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-chup">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Chup Chup Ke</span>
-              <span class="poster-bottom">2006 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Comedy · Romance</span>
-            </div>
-            <h3>Chup Chup Ke</h3>
-            <p class="movie-year">2006</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-hera">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Hera Pheri</span>
-              <span class="poster-bottom">2000 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Comedy</span>
-            </div>
-            <h3>Hera Pheri</h3>
-            <p class="movie-year">2000</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-expendables">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">The Expendables</span>
-              <span class="poster-bottom">2010 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Action</span>
-            </div>
-            <h3>The Expendables</h3>
-            <p class="movie-year">2010</p>
-          </article>
-
-          <article class="movie-card" data-category="movie">
-            <div class="movie-poster poster-johnwick">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">John Wick</span>
-              <span class="poster-bottom">2014 <i>•</i> MOVIE</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">MOVIE</span>
-              <span class="movie-genre">Action · Thriller</span>
-            </div>
-            <h3>John Wick</h3>
-            <p class="movie-year">2014</p>
-          </article>
-
-          <article class="movie-card" data-category="series">
-            <div class="movie-poster poster-breakingbad">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Breaking Bad</span>
-              <span class="poster-bottom">2008 <i>•</i> SERIES</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">SERIES</span>
-              <span class="movie-genre">Crime · Drama</span>
-            </div>
-            <h3>Breaking Bad</h3>
-            <p class="movie-year">2008</p>
-          </article>
-
-          <article class="movie-card" data-category="series">
-            <div class="movie-poster poster-got">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Game of Thrones</span>
-              <span class="poster-bottom">2011 <i>•</i> SERIES</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">SERIES</span>
-              <span class="movie-genre">Fantasy · Drama</span>
-            </div>
-            <h3>Game of Thrones</h3>
-            <p class="movie-year">2011</p>
-          </article>
-
-          <article class="movie-card" data-category="series">
-            <div class="movie-poster poster-panchayat">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Panchayat</span>
-              <span class="poster-bottom">2020 <i>•</i> SERIES</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">SERIES</span>
-              <span class="movie-genre">Comedy · Drama</span>
-            </div>
-            <h3>Panchayat</h3>
-            <p class="movie-year">2020</p>
-          </article>
-
-          <article class="movie-card" data-category="series">
-            <div class="movie-poster poster-sacredgames">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Sacred Games</span>
-              <span class="poster-bottom">2018 <i>•</i> SERIES</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">SERIES</span>
-              <span class="movie-genre">Crime · Thriller</span>
-            </div>
-            <h3>Sacred Games</h3>
-            <p class="movie-year">2018</p>
-          </article>
-
-          <article class="movie-card" data-category="series">
-            <div class="movie-poster poster-paatallok">
-              <span class="poster-kicker">NOMAN'S WATCHLIST</span>
-              <span class="poster-title">Paatal Lok</span>
-              <span class="poster-bottom">2020 <i>•</i> SERIES</span>
-            </div>
-            <div class="movie-meta">
-              <span class="movie-type">SERIES</span>
-              <span class="movie-genre">Crime · Thriller</span>
-            </div>
-            <h3>Paatal Lok</h3>
-            <p class="movie-year">2020</p>
-          </article>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-    <!-- ===== PAGE 5: INTERESTS ===== -->
-    <div id="view-interests" class="page-view" hidden>
-      <section id="interests" class="personal-section">
-        <div class="section-heading">
-          <span class="section-tag">OUTSIDE MY STUDIES</span>
-          <h2>Personal <span>Interests</span></h2>
-          <p>The things I enjoy beyond university and coding.</p>
-        </div>
-
-        <div class="personal-grid interest-grid">
-          <article class="feature-card">
-            <div class="card-icon">🎮</div>
-            <h3>Gaming</h3>
-            <p>Gaming, improving my skills and enjoying competitive challenges.</p>
-            <div class="interest-tags">
-              <span>PC Gaming</span>
-              <span>Mobile Gaming</span>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="card-icon">🎧</div>
-            <h3>Music Favourites</h3>
-            <p>Music that matches my mood, helps me focus and makes the day better.</p>
-            <div class="interest-tags">
-              <span>Favourite Songs</span>
-              <span>Playlists</span>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="card-icon">📷</div>
-            <h3>Photography</h3>
-            <p>Capturing places, everyday moments and interesting details.</p>
-            <div class="interest-tags">
-              <span>Nature</span>
-              <span>Everyday Moments</span>
-            </div>
-          </article>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-    <!-- ===== PAGE 6: QUOTES & IDEAS ===== -->
-    <div id="view-quotes" class="page-view" hidden>
-      <section id="quotes" class="personal-section">
-        <div class="section-heading">
-          <span class="section-tag">THOUGHTS &amp; PERSPECTIVE</span>
-          <h2>Quotes &amp; <span>Ideas</span></h2>
-          <p>Thoughts that inspire me to learn and keep moving.</p>
-        </div>
-
-        <div class="quote-card">
-          <span class="quote-mark">“</span>
-          <blockquote>Small steps every day can lead to remarkable progress.</blockquote>
-          <p>MY PERSONAL REMINDER</p>
-        </div>
-
-        <div class="personal-grid idea-grid">
-          <article class="feature-card">
-            <div class="card-icon">💡</div>
-            <h3>Keep Learning</h3>
-            <p>Stay curious, ask questions and keep improving your skills.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="card-icon">🎯</div>
-            <h3>Focus on Progress</h3>
-            <p>Build good habits and let consistent effort do its work.</p>
-          </article>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-    <!-- ===== PAGE 7: CONTACT ===== -->
-    <div id="view-contact" class="page-view" hidden>
-      <section class="section container" id="contact">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact-card">
-          <p class="contact-intro">Have a project idea or a question? Send me a message.</p>
-
-          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" placeholder="Enter your name" required minlength="2">
-
-            <label for="email">Your email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Your message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required minlength="10"></textarea>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <p id="form-status" class="form-status"></p>
-          </form>
-        </div>
-      </section>
-      <div class="view-footer"><a href="#home" class="btn btn-outline">← Back to Profile</a></div>
-    </div>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Noman. Built with HTML, CSS &amp; JS.</p>
-      <a href="#home">Back to Profile ↑</a>
-    </div>
-  </footer>
-
-  <!-- Script is at the bottom so all the page elements already exist when it runs -->
-  <script src="script.js"></script>
+  </nav>
+</header>
+<main class="page-main" id="page-main" tabindex="-1">
+<div class="page-view is-active" id="view-home" data-view="home" aria-hidden="false"><section class="hero section-shell" id="home">
+<div class="hero-copy">
+<p class="eyebrow reveal"><span class="eyebrow-line"></span> PERSONAL PORTFOLIO · 2026</p>
+<p class="hero-pretitle reveal">Hello, I'm</p>
+<h1 class="hero-title reveal">Noman<br/><span>Baloch.</span></h1>
+<p class="hero-description reveal">An IT student with a growing interest in building useful things through technology, creativity and continuous learning.</p>
+<div class="hero-actions reveal">
+<a class="button button-dark" href="#projects">Explore my work <span>↗</span></a>
+<a class="text-link" href="#contact">Get in touch <span>→</span></a>
+</div>
+<div aria-label="Social links" class="hero-socials reveal">
+<a href="https://github.com/nomibaloch1" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="https://facebook.com/Nomi%20Baloch" rel="noopener noreferrer" target="_blank">Facebook ↗</a>
+<a href="https://wa.me/923333147370" rel="noopener noreferrer" target="_blank">WhatsApp ↗</a>
+</div>
+</div>
+<div class="hero-visual reveal">
+<div class="portrait-frame">
+<img alt="Portrait of Noman Baloch" class="hero-photo" src="profile.jpg"/>
+<div class="portrait-caption"><span>BASED IN</span><strong>Quetta, Pakistan</strong></div>
+</div>
+<div aria-hidden="true" class="hero-stamp"><span>CURIOUS</span><span>BY NATURE</span><b>✳</b></div>
+<span class="hero-index">01 / 09</span>
+</div>
+</section></div>
+<div class="page-view" id="view-about" data-view="about" aria-hidden="true"><section class="content-section section-shell" id="about">
+<div class="section-topline reveal"><span>01 — ABOUT</span><span>A LITTLE INTRODUCTION</span></div>
+<div class="about-layout">
+<h2 class="section-heading reveal">Learning today.<br/><em>Building for tomorrow.</em></h2>
+<div class="about-copy reveal">
+<p>My name is Noman, and I'm a BS Information Technology student at Balochistan University.</p>
+<p>I'm developing my skills in programming, web technologies, editing and problem-solving. I enjoy exploring ideas, learning by doing and turning what I learn into practical projects.</p>
+<a class="underlined-link" href="#education">A little about my journey <span>↗</span></a>
+</div>
+</div>
+<div class="about-note reveal"><span class="note-mark">✳</span><p>Curious mind. Creative thinking. Always learning and improving.</p></div>
+</section></div>
+<div class="page-view" id="view-skills" data-view="skills" aria-hidden="true"><section class="content-section section-shell" id="skills">
+<div class="section-topline reveal"><span>02 — SKILLS</span><span>WHAT I'M LEARNING</span></div>
+<div class="section-intro reveal"><h2 class="section-heading">Tools I'm<br/><em>growing with.</em></h2><p>Skills are a work in progress. These are the areas I'm currently learning and improving through practice.</p></div>
+<div class="skills-layout">
+<div class="skill-list">
+<div class="skill-row reveal"><div class="skill-heading"><h3>HTML</h3><span>Beginner</span></div><div class="skill-track"><span data-level="55"></span></div></div>
+<div class="skill-row reveal"><div class="skill-heading"><h3>CSS</h3><span>Beginner</span></div><div class="skill-track"><span data-level="45"></span></div></div>
+<div class="skill-row reveal"><div class="skill-heading"><h3>C++</h3><span>Beginner</span></div><div class="skill-track"><span data-level="40"></span></div></div>
+<div class="skill-row reveal"><div class="skill-heading"><h3>Editing &amp; Office Tools</h3><span>Learning</span></div><div class="skill-track"><span data-level="60"></span></div></div>
+</div>
+<div class="skills-aside reveal"><span class="aside-number">04</span><p>Curiosity is the starting point. Consistent practice is how I move forward.</p><span class="aside-rule"></span></div>
+</div>
+</section></div>
+<div class="page-view" id="view-education" data-view="education" aria-hidden="true"><section class="content-section section-shell" id="education">
+<div class="section-topline reveal"><span>03 — EDUCATION</span><span>MY ACADEMIC BACKGROUND</span></div>
+<div class="education-panel reveal">
+<div class="education-date">2024 <span>—</span> 2028</div>
+<div class="education-details"><p class="small-label">UNDERGRADUATE STUDIES</p><h2>Bachelor of Science in<br/><em>Information Technology</em></h2><p>Balochistan University</p></div>
+<span aria-hidden="true" class="education-symbol">✳</span>
+</div>
+</section></div>
+<div class="page-view" id="view-projects" data-view="projects" aria-hidden="true"><section class="content-section section-shell" id="projects">
+<div class="section-topline reveal"><span>04 — PROJECTS</span><span>MY LEARNING JOURNEY</span></div>
+<div class="section-intro reveal"><h2 class="section-heading">Selected<br/><em>work &amp; practice.</em></h2><p>A few learning projects and practical exercises from my journey into technology.</p></div>
+<div class="project-grid">
+<article class="project-card project-feature reveal"><div class="project-card-top"><span>PROJECT 01</span><span>01 / 03</span></div><div class="project-art portfolio-art"><span>NB<span>.</span></span><i>PERSONAL PORTFOLIO</i></div><div class="project-info"><div><h3>Personal Portfolio</h3><p>A personal website presenting my background, skills and work using HTML, CSS and JavaScript.</p></div><span class="project-arrow">↗</span></div><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+<article class="project-card reveal"><div class="project-card-top"><span>PROJECT 02</span><span>02 / 03</span></div><div class="project-art student-art"><span class="art-big">ST</span><span class="art-small">STUDENT<br/>RECORDS</span><span class="art-grid">＋　＋<br/>＋　＋</span></div><div class="project-info"><div><h3>Student Management</h3><p>A beginner C++ project concept for adding, searching and displaying student records.</p></div><span class="project-arrow">↗</span></div><div class="tag-row"><span>C++</span><span>Console</span></div></article>
+<article class="project-card reveal"><div class="project-card-top"><span>PROJECT 03</span><span>03 / 03</span></div><div class="project-art web-art"><span class="web-window"><i></i><i></i><i></i><b>&lt;/&gt;</b></span><span class="web-caption">LEARN · BUILD · REPEAT</span></div><div class="project-info"><div><h3>Web Technologies</h3><p>Practical exercises exploring website structure, styling and interactive web concepts.</p></div><span class="project-arrow">↗</span></div><div class="tag-row"><span>Web Development</span><span>Practice</span></div></article>
+</div>
+<div class="section-end-link reveal"><a class="underlined-link" href="https://github.com/nomibaloch1" rel="noopener noreferrer" target="_blank">More on GitHub <span>↗</span></a></div>
+</section></div>
+<div class="page-view" id="view-adventures" data-view="adventures" aria-hidden="true"><section class="content-section section-shell" id="adventures">
+<div class="section-topline reveal"><span>05 — ADVENTURES</span><span>BEYOND THE SCREEN</span></div>
+<div class="section-intro reveal"><h2 class="section-heading">A sense of<br/><em>somewhere.</em></h2><p>Places I've explored and places I dream of visiting. A little collection of landscapes and local memories.</p></div>
+<div class="travel-grid">
+<article class="travel-card travel-large reveal"><img alt="Quetta landscape" loading="lazy" src="images/quetta.jpg"/><div class="travel-overlay"><span>MY CITY · 01</span><h3>Quetta</h3><p>Discovering local places, city views and the beauty of Balochistan.</p></div></article>
+<article class="travel-card reveal"><img alt="Nushki landscape" loading="lazy" src="images/nushki.jpg"/><div class="travel-overlay"><span>LOCAL ADVENTURE · 02</span><h3>Nushki</h3><p>Exploring local landscapes, culture and places worth remembering.</p></div></article>
+<article class="travel-card reveal"><img alt="Ziarat mountains" loading="lazy" src="images/ziarat.JPG"/><div class="travel-overlay"><span>NATURE &amp; MOUNTAINS · 03</span><h3>Ziarat</h3><p>Mountain views and the peaceful side of Balochistan.</p></div></article>
+<article class="travel-card reveal"><img alt="Bolan landscape" loading="lazy" src="images/bolan.jpg"/><div class="travel-overlay"><span>NATURE &amp; ADVENTURE · 04</span><h3>Bolan</h3><p>Scenic landscapes, mountain passes and natural beauty.</p></div></article>
+<article class="travel-card wishlist-card reveal"><span class="wishlist-icon">✳</span><span class="small-label">MY BUCKET LIST</span><h3>Somewhere<br/><em>next.</em></h3><ol><li><span>01</span>Northern Pakistan</li><li><span>02</span>Nepal</li><li><span>03</span>Italy</li><li><span>04</span>Spain</li></ol></article>
+</div>
+</section></div>
+<div class="page-view" id="view-movies" data-view="movies" aria-hidden="true"><section class="content-section section-shell" id="movies">
+<div class="section-topline reveal"><span>06 — MOVIES &amp; SERIES</span><span>MY WATCHLIST</span></div>
+<div class="section-intro reveal"><h2 class="section-heading">Stories worth<br/><em>staying for.</em></h2><p>Stories, characters and cinematic worlds I enjoy. Browse the watchlist by category.</p></div>
+<div class="watchlist-toolbar reveal"><p><strong>20</strong> titles collected</p><div aria-label="Filter watchlist" class="filter-buttons" role="group"><button class="filter-btn active" data-filter="all" type="button">All <span>20</span></button><button class="filter-btn" data-filter="movie" type="button">Movies <span>15</span></button><button class="filter-btn" data-filter="series" type="button">Series <span>5</span></button></div></div>
+<div class="movie-grid">
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-rockstar"><span>01 / FILM</span><strong>Rockstar</strong><i>2011</i></div><div class="movie-meta"><h3>Rockstar</h3><span>2011 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-atonement"><span>02 / FILM</span><strong>Atonement</strong><i>2007</i></div><div class="movie-meta"><h3>Atonement</h3><span>2007 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-kgf"><span>03 / FILM</span><strong>KGF</strong><i>2018</i></div><div class="movie-meta"><h3>KGF: Chapter 1</h3><span>2018 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-fight"><span>04 / FILM</span><strong>Fight<br/>Club</strong><i>1999</i></div><div class="movie-meta"><h3>Fight Club</h3><span>1999 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-taxi"><span>05 / FILM</span><strong>Taxi Driver</strong><i>1976</i></div><div class="movie-meta"><h3>Taxi Driver</h3><span>1976 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-inception"><span>06 / FILM</span><strong>Inception</strong><i>2010</i></div><div class="movie-meta"><h3>Inception</h3><span>2010 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-interstellar"><span>07 / FILM</span><strong>Interstellar</strong><i>2014</i></div><div class="movie-meta"><h3>Interstellar</h3><span>2014 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-scarface"><span>08 / FILM</span><strong>Scarface</strong><i>1983</i></div><div class="movie-meta"><h3>Scarface</h3><span>1983 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-godfather"><span>09 / FILM</span><strong>The<br/>Godfather</strong><i>1972</i></div><div class="movie-meta"><h3>The Godfather</h3><span>1972 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-se7en"><span>10 / FILM</span><strong>Se7en</strong><i>1995</i></div><div class="movie-meta"><h3>Se7en</h3><span>1995 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-shawshank"><span>11 / FILM</span><strong>The Shawshank<br/>Redemption</strong><i>1994</i></div><div class="movie-meta"><h3>The Shawshank Redemption</h3><span>1994 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-chup"><span>12 / FILM</span><strong>Chup Chup<br/>Ke</strong><i>2006</i></div><div class="movie-meta"><h3>Chup Chup Ke</h3><span>2006 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-hera"><span>13 / FILM</span><strong>Hera Pheri</strong><i>2000</i></div><div class="movie-meta"><h3>Hera Pheri</h3><span>2000 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-expendables"><span>14 / FILM</span><strong>The<br/>Expendables</strong><i>2010</i></div><div class="movie-meta"><h3>The Expendables</h3><span>2010 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="movie"><div class="movie-art art-johnwick"><span>15 / FILM</span><strong>John Wick</strong><i>2014</i></div><div class="movie-meta"><h3>John Wick</h3><span>2014 · Movie</span></div></article>
+<article class="movie-card reveal" data-category="series"><div class="movie-art art-breaking"><span>16 / SERIES</span><strong>Breaking<br/>Bad</strong><i>2008</i></div><div class="movie-meta"><h3>Breaking Bad</h3><span>2008 · Series</span></div></article>
+<article class="movie-card reveal" data-category="series"><div class="movie-art art-got"><span>17 / SERIES</span><strong>Game of<br/>Thrones</strong><i>2011</i></div><div class="movie-meta"><h3>Game of Thrones</h3><span>2011 · Series</span></div></article>
+<article class="movie-card reveal" data-category="series"><div class="movie-art art-panchayat"><span>18 / SERIES</span><strong>Panchayat</strong><i>2020</i></div><div class="movie-meta"><h3>Panchayat</h3><span>2020 · Series</span></div></article>
+<article class="movie-card reveal" data-category="series"><div class="movie-art art-sacred"><span>19 / SERIES</span><strong>Sacred<br/>Games</strong><i>2018</i></div><div class="movie-meta"><h3>Sacred Games</h3><span>2018 · Series</span></div></article>
+<article class="movie-card reveal" data-category="series"><div class="movie-art art-paatal"><span>20 / SERIES</span><strong>Paatal Lok</strong><i>2020</i></div><div class="movie-meta"><h3>Paatal Lok</h3><span>2020 · Series</span></div></article>
+</div>
+</section></div>
+<div class="page-view" id="view-interests" data-view="interests" aria-hidden="true"><section class="content-section section-shell" id="interests">
+<div class="section-topline reveal"><span>07 — INTERESTS</span><span>OUTSIDE MY STUDIES</span></div>
+<div class="section-intro reveal"><h2 class="section-heading">Things that<br/><em>make me, me.</em></h2><p>The things I enjoy beyond university and coding — little interests that keep life balanced and creative.</p></div>
+<div class="interest-grid">
+<article class="interest-card reveal"><span class="interest-number">01</span><span class="interest-symbol">⌁</span><h3>Gaming</h3><p>Gaming, improving my skills and enjoying competitive challenges.</p><div class="tag-row"><span>PC Gaming</span><span>Mobile Gaming</span></div></article>
+<article class="interest-card reveal"><span class="interest-number">02</span><span class="interest-symbol">♫</span><h3>Music Favourites</h3><p>Music that matches my mood, helps me focus and makes the day better.</p><div class="tag-row"><span>Favourite Songs</span><span>Playlists</span></div></article>
+<article class="interest-card reveal"><span class="interest-number">03</span><span class="interest-symbol">◎</span><h3>Photography</h3><p>Capturing places, everyday moments and interesting details.</p><div class="tag-row"><span>Nature</span><span>Everyday Moments</span></div></article>
+</div>
+</section></div>
+<div class="page-view" id="view-contact" data-view="contact" aria-hidden="true"><section class="contact-section section-shell" id="contact">
+<div class="section-topline reveal"><span>08 — CONTACT</span><span>LET'S CONNECT</span></div>
+<div class="contact-layout">
+<div class="contact-copy reveal"><p class="eyebrow">HAVE SOMETHING IN MIND?</p><h2 class="section-heading">Let's make<br/><em>something good.</em></h2><p>Have a project idea, a question or just want to say hello? Send me a message.</p><div class="contact-socials"><a href="https://github.com/nomibaloch1" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="https://facebook.com/Nomi%20Baloch" rel="noopener noreferrer" target="_blank">Facebook ↗</a><a href="https://wa.me/923333147370" rel="noopener noreferrer" target="_blank">WhatsApp ↗</a></div></div>
+<form class="contact-form reveal" id="contact-form">
+<label for="name">Your name</label><input id="name" minlength="2" name="name" placeholder="Name" required="" type="text"/>
+<label for="email">Your email</label><input id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+<label for="message">Your message</label><textarea id="message" minlength="5" name="message" placeholder="Write your message..." required="" rows="4"></textarea>
+<button class="button button-dark form-submit" type="submit">Send via WhatsApp <span>↗</span></button>
+<p aria-live="polite" class="form-note" id="form-status">Your message will open in WhatsApp for you to review and send.</p>
+</form>
+</div>
+</section></div>
+</main>
+<footer class="site-footer"><div class="footer-inner container"><a class="brand footer-brand" href="#home" data-page="home">NB<span>.</span></a><span class="footer-note">Noman Baloch · Personal Portfolio</span><button class="back-top" type="button" data-page="home">Back to home ↑</button></div></footer>
 </body>
 </html>

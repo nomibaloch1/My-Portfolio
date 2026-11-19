@@ -8,12 +8,12 @@ I'm Noman Baloch, a BS Information Technology student at Balochistan University.
 
 🔗 **Visit my portfolio:** [NOMI BALOCH Portfolio](https://nomibaloch1.github.io/My-Portfolio/)
 
-## 👨‍💻 About Me
+##  About Me
 
-- 🎓 BS Information Technology student (2024–2028)
-- 💻 Learning programming and web development
-- 🚀 Interested in technology, gaming, and creative projects
-- 📚 Always learning and improving my skills
+-  BS Information Technology student (2024–2028)
+-  Learning programming and web development
+-  Interested in technology, gaming, and creative projects
+-  Always learning and improving my skills
 
 ## 🛠️ Skills
 
@@ -24,17 +24,6 @@ I'm Noman Baloch, a BS Information Technology student at Balochistan University.
 - Typing and basic computer skills
 - Editing and problem-solving
 
-## ✨ Portfolio Features
-
-- Personal introduction
-- Skills and projects
-- Dark and light themes
-- Animated text effects
-- Adventures and travel
-- Movies and series
-- Quotes and ideas
-- Contact section
-- Responsive design
 
 ## 🎯 My Goal
 
